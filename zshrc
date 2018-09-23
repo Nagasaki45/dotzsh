@@ -53,7 +53,7 @@ plugins=(autoenv git sudo zsh-syntax-highlighting ssh-agent z)
 
 # User configuration
 
-export PATH="$HOME/.gem/ruby/2.3.0/bin:$HOME/miniconda3/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin/:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
