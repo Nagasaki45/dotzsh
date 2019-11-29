@@ -53,7 +53,7 @@ plugins=(git sudo ssh-agent z)
 
 # User configuration
 
-export PATH="$HOME/bin:$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.gem/ruby/2.5.0/bin:$HOME/bin:$HOME/.local/bin/:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -62,11 +62,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='vim'
-fi
+export EDITOR='vim'
 export VISUAL='vim'
 
 # Compilation flags
@@ -83,3 +79,10 @@ export VISUAL='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export BIBO_DATABASE="$HOME/Dropbox/PhD/phd.bib"
+
+# added by travis gem
+[ -f /home/nagasaki45/.travis/travis.sh ] && source /home/nagasaki45/.travis/travis.sh
+
+# Enable autocomplete for bibo
+eval "$(_BIBO_COMPLETE=source_zsh bibo)"
