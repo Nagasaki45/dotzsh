@@ -86,3 +86,6 @@ export BIBO_DATABASE="$HOME/Dropbox/PhD/phd.bib"
 
 # Enable autocomplete for bibo
 eval "$(_BIBO_COMPLETE=source_zsh bibo)"
+
+# My aliases
+alias seba="source env/bin/activate"
