@@ -53,7 +53,7 @@ plugins=(git sudo ssh-agent z)
 
 # User configuration
 
-export PATH="$HOME/.gem/ruby/2.5.0/bin:$HOME/bin:$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$HOME/bin:$HOME/.local/bin/:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
